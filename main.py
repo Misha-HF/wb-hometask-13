@@ -30,4 +30,10 @@ async def startup():
 
 @app.get("/")
 def read_root():
+    """
+    The read_root function returns a dictionary with the key 'message' and
+    value &quot;Contact manager API&quot;.
+
+    :return: A dictionary
+    """
     return {"message": "Hello World"}

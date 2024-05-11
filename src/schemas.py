@@ -9,6 +9,7 @@ class ContactBase(BaseModel):
     email: EmailStr
     phone_number: str = Field(min_length=10, max_length=15)
     birthday: date
+    
 
 
 class ContactCreate(ContactBase):

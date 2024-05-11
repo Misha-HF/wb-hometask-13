@@ -8,6 +8,9 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 class Contact(Base):
+    """
+    The Contact class is used to create a table in the database
+    """
     __tablename__ = 'contacts'
     id = Column(Integer, primary_key=True, index=True)
     first_name = Column(String)
@@ -21,6 +24,9 @@ class Contact(Base):
 
 
 class User(Base):
+    """
+    The User class is used to create a table in the database
+    """
     __tablename__ = "users"
     id = Column(Integer, primary_key=True)
     username = Column(String(50))
